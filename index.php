@@ -1,0 +1,140 @@
+<?php
+if($_POST["message"]) {
+    mail("josepimentel@gmail.com", "Website", $_POST["message"], "From: josepimentel2025@gmail.com");
+}
+?>
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Jose Pimentel</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+        <!-- Intro -->
+        <div id="intro">
+            <h1>Jose<br /> Pimentel
+            </h1>
+            <p>Welcome to my Domain</p>
+            <ul class="actions">
+                <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Read On</a></li>
+            </ul>
+        </div>
+
+        <!-- Header -->
+        <header id="header">
+            <a class="logo">Jose</a>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <span class="date">Summary</span>
+                    <h2>About me<br /></h2>
+                    <p> I am an 18 year old Computer Science Enthusiast who loves to engage with others just as much as I love to learn. <br /> The sole purpose of this site is to demonstrate my ability to those who are curious. <br /> My various projects
+                        can be found on this website.
+                        <br /></p>
+                </header>
+                <p style="text-align:center"><a href="#footer" class="button large scrolly">Message Me?</a></p>
+            </article>
+
+            <!-- Posts -->
+            <section class="posts">
+                <article>
+                    <header>
+                        <h2> Job<br />
+                            <div></div> Experience</h2>
+                    </header>
+                    <a href="jobxp.html" class="image fit"><img src="images/jobxp-cover.jpg" alt="" /></a>
+                    <p style="text-align: center;">Achievements accomplished throughout working in IT</p>
+
+                </article>
+                <article>
+                    <header>
+                        <h2>Cyber Security<br />
+                            <div></div> Projects
+                        </h2>
+                    </header>
+                    <a href="cybersec.html" class="image fit"><img src="images/cybersec-cover.jpg" alt="" /></a>
+                    <p style="text-align: center;"> A collection of time and mind-intensive challenges</p>
+
+                </article>
+                <article>
+                    <header>
+                        <h2>Raspberry pi
+                            <div></div>
+                            Camera System</h2>
+                    </header>
+                    <a href="RaspberryPi.html" class="image fit"><img src="images/rbpi-cover.jpg" alt="" /></a>
+                    <p style="text-align: center;">An all-in-one NVR, monitor, and NAS file server</p>
+
+                </article>
+                <article>
+                    <header>
+                        <h2>Google<br />
+                            <div></div>
+                            IT Certificate</h2>
+                    </header>
+                    <a href="googlecert.html" class="image fit"><img src="images/googlecert-cover.jpeg" alt="" /></a>
+                    <p style="text-align: center;">A Certificate comparable to several college credits</p>
+                </article>
+            </section>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <section>
+                    <h2>Share your thoughts with me</h2>
+
+                    <form method="post" action="index.php">
+                        <div class="fields">
+                            <div class="field">
+                                <label for="name">Your Name</label>
+                                <input type="text" name="name" id="name" />
+                            </div>
+                            <div class="field">
+                                <label for="email">Your Email</label>
+                                <input type="text" name="email" id="email" />
+                            </div>
+                            <div class="field">
+                                <label for="message">Your Message</label>
+                                <textarea name="message" id="message" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li style="margin: auto;"><input type="submit" value="Send Message"></li>
+                        </ul>
+                    </form>
+                </section>
+                </section>
+            </footer>
+
+            <p style="text-align: center;"><a href="#main" class="button large scrolly">Back To Top</a></p>
+
+            <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

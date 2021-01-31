@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Cyber Security</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Project</a>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Post -->
+            <section class="post">
+                <header class="major">
+                    <h1>Cyber Security
+                        <div></div>Projects</h1>
+                    <p>A collection of time and mind-intensive challenges</p>
+                </header>
+            </section>
+
+            <section>
+                <h2 style="text-align: center;">Overview</h2>
+                <p>My first project was working with a Lan Turtle from Hak5. These are great for man in the middle reconnaissance and attacks. When purchasing one it comes with instructions on how to get it setup, and there is plenty of documentation in
+                    other places as well. What I will be talking about is the capabilities it has when coupled with a SSH tunnel. To start off, I used Linode because they offer a 100$ credit when signing up for their service: you can get 10 months free
+                    from the start with Linode. The tool that is important when trying to SSH with windows is PuTTY, and its free. First you must SSH into the Linode server so that you can create a user for the Lan Turtle to connect to. Once that is done
+                    you can then SSH into the Lan Turtle and create an Authentication token. What this token will be used for is so that on boot the token will be used to authenticate it with the Linode server however you have to manually SSH from the
+                    Lan Turtle to the Linode server so that the interaction can be confirmed, its like a challenge-response between the two. The hard work is over, now you can SSH into the Linode server and make sure to sign into the new user, and from
+                    there SSH into localhost and port 22 because the Lan turtle is connected to the new user from a different port. </p>
+                <p>Another project I started on was using the Bash Bunny tool It is similar to the Rubber Ducky, which is more widely known. Just like the name suggests the Bash bunny is a powerful tool. I chose not to do anything too harmful and more of
+                    a practical gag than a serious hack. To keep it brief I wrote a script in which the bash bunny creates a .bat file (batch file) and executes it during every startup. I accomplished this by saving it in the startup directory of Windows.
+                    What this script does is executes a PowerShell command stored elsewhere. There are two reasons I did this. First because executing a PowerShell on startup brings out an unwanted script confirmation dialogue. Secondly, the batch file
+                    contains text which is displayed using the echo command on cmd. The code is filled with backslashes because of the problem with Linux Interpreting them differently that Windows does.</p>
+            </section>
+            <p style="text-align: center; padding-top: auto; padding-bottom: 5%;"><a href="index.html" class="button large">Go Back</a></p>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div id="copyright">
+
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

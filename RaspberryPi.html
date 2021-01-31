@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Raspberry Pi Camera System</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Project</a>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Post -->
+            <section class="post">
+                <header class="major">
+                    <h1>Raspberry Pi
+                        <div></div>Camera System</h1>
+                    <p>A cheap alternative to a NVR system that also doubles as a camera monitor</p>
+                </header>
+            </section>
+            <section>
+                <h2 style="text-align: center;">Overview</h2>
+                <p>A problem people who are concerned about home security face is cameras. The issues mainly revolve around costs, quality, and video storage. Looking for a low-cost camera with quality video is hard because of the hundreds of options available.
+                    I went ahead and got 3 Amcrest Cameras that were about 100 dollars each. These cameras are capable of recording at 4k at 60 fps. With the Amcrest app, you can live-stream the cameras from anywhere. Amcrest also provides the option
+                    of 24/7 recording with cloud storage. However, the monthly subscription was something that did not appeal to me. The solution I had in mind was something in-house that was easily accessible. While looking at the market you can see
+                    the price of an NVR is quite high ranging from 300 dollars to even 500, with most of them coming with an out-of-date HDD.</p>
+                <p>With the release of the new Raspberry Pi 4, I was beginning to wonder how I could transform the Raspberry pi into a custom NVR. First, I had to install an OS onto the Raspberry pi. I installed Ubuntu 20.0; this way others have a bit more
+                    familiarity with it. Now is the time to look for what software to use for the camera streaming. I decided to go with Shinobi. It is open-source software and has a large community behind it. Downloading the repository was simple using-</p>
+                <p>git clone https://gitlab.com/Shinobi-Systems/Shinobi.git Shinobi</p>
+                <p>It automatically uses the Raspberry Pi’s IP address to display a webpage on port 8080. Navigating to</p>
+                <p>[IP Address]:8080/super</p>
+                <p>takes you to the admin page where you can add a restricted user so that the streams can be viewed via the website. Then going to </p>
+                <p>[IP Address]:8080/</p>
+                <p>And logging in with the restricted user introduces a dashboard for the cameras. All-in-all an easy setup where you can view the cameras from other devices.</p>
+                <p>However, I wanted it to be easier to see the live stream for others in the house, not many know how to navigate to IP and different ports with chrome. To fix that issue I decided to get an (optional) 60$ touch display for the Raspberry
+                    Pi. This way I can hang the device up and have it running constantly. And to fix the memory issue I ordered an 80$ 1TB SSD so that recording can be viewed as far back as one week. Doing this requires a rewrite to the directory of the
+                    SSD from where the Shinobi automatically writes. I also wanted the recordings the be accessed by other computers, so I downloaded Samba. I then went the file I wanted to share and shared it but created a user mask so that Windows users
+                    automatically logged in as the root user of the Raspberry Pi. This allows for the Windows user to fully control all the files stored in the SSD. The next thing that bothered me was having hanging wires and a naked Raspberry Pi sticking
+                    out. I got a cheap 5$ cigar box and coated it for an encasing for the Raspberry Pi. I also soldered an on-off switch so that the display can be shut off from outside the encasing. In the end, I had a cheap NVR with an external monitor
+                    and a built in NAS file server with the total coming out to 220$.</p>
+                <div class="image main"><img src="images/raspberrypi1.jpg" alt="" /></div>
+                <div class="image main"><img src="images/raspberrypi2.jpg" alt="" /></div>
+                <p style="text-align: center; padding-top: auto; padding-bottom: 5%;"><a href="index.html" class="button large">Go Back</a></p>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div id="copyright">
+
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
